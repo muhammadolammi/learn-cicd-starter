@@ -26,7 +26,7 @@ type apiConfig struct {
 //go:embed static/*
 var staticFiles embed.FS
 
-func main() {
+func main(){
 	//lets add some test
 	err := godotenv.Load(".env")
 	if err != nil {
@@ -102,7 +102,7 @@ func main() {
 	log.Fatal(srv.ListenAndServe())
 }
 
-func addParseTimeParam(input string) (string, error) {
+func addParseTimeParam(input string) (string, error){
 	const dummyScheme = "http://"
 	if !strings.Contains(input, dummyScheme) {
 		input = "http://" + input
