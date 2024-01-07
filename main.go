@@ -28,7 +28,6 @@ var staticFiles embed.FS
 
 func main(){
 	//lets add some test
-	//test done
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Printf("warning: assuming default configuration. .env unreadable: %v", err)
