@@ -26,9 +26,9 @@ type apiConfig struct {
 //go:embed static/*
 var staticFiles embed.FS
 
-func main() {
+func main(){
 	//lets add some test
-	//ci should fail
+	//ci should pass
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Printf("warning: assuming default configuration. .env unreadable: %v", err)
