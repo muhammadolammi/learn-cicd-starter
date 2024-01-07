@@ -14,7 +14,7 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/joho/godotenv"
 
-	"github.com/bootdotdev/learn-cicd-starter/internal/database"
+	"github.com/muhammadolammi/learn-cicd-starter/internal/database"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -27,7 +27,7 @@ type apiConfig struct {
 var staticFiles embed.FS
 
 func main() {
-	//lets add some tests
+	//lets add some test
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Printf("warning: assuming default configuration. .env unreadable: %v", err)
